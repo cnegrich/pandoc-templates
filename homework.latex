@@ -1,6 +1,7 @@
 % Homework Template by Christopher Negrich - Mostly a copy of the default template
-% Custom commands
+% Custom commands --------------------------------------------
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+%-------------------------------------------------------------
 
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode$for(hyperrefoptions)$,$hyperrefoptions$$endfor$}{hyperref}
@@ -400,6 +401,10 @@ $if(logo)$
 \logo{\includegraphics{$logo$}}
 $endif$
 $endif$
+
+% Set margins ------------------------------------------------
+\usepackage[margin=1in]{geometry}
+%-------------------------------------------------------------
 
 % toc Customization ------------------------------------------
 \renewcommand*\contentsname{Table of Contents}
