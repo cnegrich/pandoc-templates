@@ -413,11 +413,12 @@ $endif$
 % Header and footer ------------------------------------------
 $if(header)$
     \usepackage{fancyhdr}
+    \usepackage{lastpage}
     \pagestyle{fancy}
     \fancyhf{}
     \fancyhead[LE,RO]{$author$}
     \fancyhead[RE,LO]{$title$}
-    \fancyfoot[CE,CO]{Page \thepage}
+    \fancyfoot[CE,CO]{Page \thepage\ of \color{black}\pageref*{LastPage}}
     \renewcommand{\headrulewidth}{2pt}
     \renewcommand{\footrulewidth}{1pt}
 $endif$
